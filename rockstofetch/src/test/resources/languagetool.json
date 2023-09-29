@@ -1,0 +1,10 @@
+{
+  "filterTests": false,
+  "usedEquality": "ASSERT_J_DEEP",
+  "ignoreCoverage": true,
+  "projectPath": "../../../../../analyzed-projects/languagetool/languagetool-core",
+  "methodsJson": "/tmp/methods.json",
+  "dataPath": "/tmp/rockstofetch/",
+  "testBasePath": "../../../prodj-experiments/generated-tests/languagetool/all/src/test/java",
+  "productionCommand": "/usr/lib/jvm/java-17-openjdk/bin/java '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005' -XX:+UnlockDiagnosticVMOptions -XX:+DebugNonSafepoints {{agent_call}} -jar ../languagetool-standalone/target/LanguageTool-6.0/LanguageTool-6.0/languagetool-commandline.jar --language en-GB /tmp/it.tex"
+}

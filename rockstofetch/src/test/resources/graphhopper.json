@@ -1,0 +1,11 @@
+{
+  "filterTests": true,
+  "ignoreCoverage": true,
+  "usedEquality": "ASSERT_J_DEEP",
+  "projectPath": "../../../../../analyzed-projects/graphhopper",
+  "methodsJson": "/tmp/methods.json",
+  "dataPath": "/tmp/rockstofetch",
+  "testBasePath": "../../prodj-experiments/generated-tests/graphhopper/all/src/test/java",
+  "productionCommand": "'{{config_dir}}/run_graphhopper.sh' {{agent_call}}",
+  "additionalInstrumentedPackages": ["net.sourceforge.argparse4j.inf.Namespace"]
+}

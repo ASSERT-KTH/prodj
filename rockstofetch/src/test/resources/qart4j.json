@@ -1,0 +1,10 @@
+{
+  "filterTests": false,
+  "usedEquality": "ASSERT_J_DEEP",
+  "ignoreCoverage": true,
+  "projectPath": "../../../../../analyzed-projects/qart4j/",
+  "methodsJson": "/tmp/methods.json",
+  "dataPath": "/tmp/rockstofetch",
+  "testBasePath": "../../prodj-experiments/generated-tests/qart4j/all/src/test/java",
+  "productionCommand": "mvn compile assembly:single && /usr/lib/jvm/java-17-openjdk/bin/java '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005' {{agent_call}} -jar target/qart4j-1.0.0-jar-with-dependencies.jar -i sample-input.png -o sample-output.png -u http://www.imdb.com/title/tt2267968/ -w 324 -h 480  --mr 72 --mb 164 -z 168 -v 16 -q 1 --cw EFFFFFFF"
+}

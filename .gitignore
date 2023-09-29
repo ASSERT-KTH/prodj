@@ -1,0 +1,4 @@
+**/target/
+/.idea/
+/.repo
+**/dependency-reduced-pom.xml

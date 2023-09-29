@@ -1,0 +1,10 @@
+{
+  "filterTests": false,
+  "usedEquality": "ASSERT_J_DEEP",
+  "ignoreCoverage": false,
+  "projectPath": "/tmp/javaparser",
+  "methodsJson": "/tmp/methods.json",
+  "dataPath": "/tmp/rockstofetch",
+  "testBasePath": "javaparser-core-testing/src/test/",
+  "productionCommand": "/usr/lib/jvm/java-11-openjdk/bin/java '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005' {{agent_call}} -jar target/PanktiDemo.jar"
+}

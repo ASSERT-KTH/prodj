@@ -1,0 +1,11 @@
+{
+  "filterTests": false,
+  "ignoreCoverage": false,
+  "usedEquality": "ASSERT_J_DEEP",
+  "projectPath": "../../../../../analyzed-projects/jplag",
+  "methodsJson": "/tmp/methods.json",
+  "dataPath": "/tmp/rockstofetch",
+  "testBasePath": "cli/src/test/java/",
+  "productionCommand": "/usr/lib/jvm/java-17-openjdk/bin/java -Xss15M '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005' {{agent_call}} -jar cli/target/jplag-4.1.0-jar-with-dependencies.jar -l java ../jplag-example",
+  "additionalInstrumentedPackages": ["net.sourceforge.argparse4j.inf.Namespace"]
+}

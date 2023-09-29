@@ -1,0 +1,31 @@
+diff --git a/spoon-javadoc/pom.xml b/spoon-javadoc/pom.xml
+index 251ca078c..cbb9c42e1 100644
+--- a/spoon-javadoc/pom.xml
++++ b/spoon-javadoc/pom.xml
+@@ -63,7 +63,7 @@
+         <dependency>
+             <groupId>fr.inria.gforge.spoon</groupId>
+             <artifactId>spoon-core</artifactId>
+-            <version>${version}</version>
++            <version>10.4.2-SNAPSHOT</version>
+             <scope>provided</scope>
+         </dependency>
+ 
+diff --git a/src/main/java/spoon/support/visitor/java/JavaReflectionTreeBuilder.java b/src/main/java/spoon/support/visitor/java/JavaReflectionTreeBuilder.java
+index 0d9c32c42..04d0ab95c 100644
+--- a/src/main/java/spoon/support/visitor/java/JavaReflectionTreeBuilder.java
++++ b/src/main/java/spoon/support/visitor/java/JavaReflectionTreeBuilder.java
+@@ -81,11 +81,11 @@ public class JavaReflectionTreeBuilder extends JavaReflectionVisitorImpl {
+ 		this.contexts = new ArrayDeque<>();
+ 	}
+ 
+-	private void enter(RuntimeBuilderContext context) {
++	protected void enter(RuntimeBuilderContext context) {
+ 		contexts.push(context);
+ 	}
+ 
+-	private RuntimeBuilderContext exit() {
++	protected RuntimeBuilderContext exit() {
+ 		return contexts.pop();
+ 	}
+ 

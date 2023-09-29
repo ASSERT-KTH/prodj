@@ -1,0 +1,10 @@
+{
+  "filterTests": false,
+  "usedEquality": "ASSERT_J_DEEP",
+  "ignoreCoverage": false,
+  "projectPath": "../../../../../analyzed-projects/OpenTripPlanner",
+  "methodsJson": "/tmp/methods.json",
+  "dataPath": "/tmp/rockstofetch",
+  "testBasePath": "src/test/java",
+  "productionCommand": "'{{config_dir}}/run_otp.sh' {{agent_call}}"
+}
