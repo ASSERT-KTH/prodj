@@ -1,5 +1,4 @@
 package se.kth.castor.pankti.codemonkey.construction.solving;
-
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.collect.Sets;

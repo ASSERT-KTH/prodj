@@ -5,9 +5,9 @@ index 251ca078c..cbb9c42e1 100644
 @@ -63,7 +63,7 @@
          <dependency>
              <groupId>fr.inria.gforge.spoon</groupId>
-             <artifactId>spoon-core</artifactId>
+             <artifactId></artifactId>
 -            <version>${version}</version>
-+            <version>10.4.2-SNAPSHOT</version>
++            <version>11.0.0</version>
              <scope>provided</scope>
          </dependency>
  

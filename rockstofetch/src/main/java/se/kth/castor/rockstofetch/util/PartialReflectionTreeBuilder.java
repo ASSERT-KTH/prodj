@@ -40,7 +40,7 @@ public class PartialReflectionTreeBuilder extends JavaReflectionTreeBuilder {
     };
     Class<?> declaringClass = executable.getDeclaringClass();
 
-    enter(new RuntimeBuilderContext() {
+    enterContext(new RuntimeBuilderContext() {
       private final Map<String, CtTypeParameter> mapTypeParameters = new HashMap<>();
 
       @Override
@@ -121,11 +121,33 @@ public class PartialReflectionTreeBuilder extends JavaReflectionTreeBuilder {
     } else {
       throw new IllegalArgumentException("Unknown executable type: " + executable);
     }
-    exit();
+    exitContext();
 
     Spoons.changeFactory(factory, holder.result);
 
     return holder.result;
+  }
+
+  private void enterContext(RuntimeBuilderContext context) {
+    try {
+      Method enterMethod = JavaReflectionTreeBuilder.class.getDeclaredMethod(
+          "enter", RuntimeBuilderContext.class
+      );
+      enterMethod.setAccessible(true);
+      enterMethod.invoke(this, context);
+    } catch (ReflectiveOperationException e) {
+      throw new IllegalStateException("Failed to enter Spoon reflection context", e);
+    }
+  }
+
+  private void exitContext() {
+    try {
+      Method exitMethod = JavaReflectionTreeBuilder.class.getDeclaredMethod("exit");
+      exitMethod.setAccessible(true);
+      exitMethod.invoke(this);
+    } catch (ReflectiveOperationException e) {
+      throw new IllegalStateException("Failed to exit Spoon reflection context", e);
+    }
   }
 
 }
